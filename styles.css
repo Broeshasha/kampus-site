@@ -1,0 +1,136 @@
+:root {
+  --bg: #0E0F11;
+  --surface: #17181B;
+  --border: #24262A;
+  --accent: #3E7BFA;
+  --text: #F2F3F5;
+  --text-secondary: #A6A9B0;
+  --danger: #D9534F;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, "SF Pro Text", "Inter", "Segoe UI", Roboto, sans-serif;
+  line-height: 1.65;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  background: rgba(14,15,17,0.9);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--border);
+  padding: 18px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 10;
+}
+
+header .logo {
+  font-weight: 600;
+  font-size: 17px;
+  color: var(--text);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+header .logo span.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--accent);
+  display: inline-block;
+}
+
+header nav a {
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-size: 14px;
+  margin-left: 20px;
+}
+
+header nav a:hover, header nav a.active { color: var(--accent); }
+
+main {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 48px 24px 96px;
+}
+
+.updated {
+  color: var(--text-secondary);
+  font-size: 13px;
+  margin-bottom: 32px;
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: 600;
+  margin: 0 0 8px;
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 40px 0 12px;
+  padding-top: 12px;
+  border-top: 1px solid var(--border);
+}
+
+h2:first-of-type { border-top: none; padding-top: 0; }
+
+p, li { color: var(--text); font-size: 15px; }
+p { color: var(--text-secondary); }
+strong { color: var(--text); }
+
+ul { padding-left: 20px; }
+li { margin-bottom: 6px; color: var(--text-secondary); }
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 16px 20px;
+  margin: 24px 0;
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+.footer-note {
+  margin-top: 56px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border);
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+
+a { color: var(--accent); }
+
+.home-links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 32px;
+}
+
+.home-links a {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 16px 20px;
+  text-decoration: none;
+  color: var(--text);
+  font-size: 15px;
+  font-weight: 500;
+  display: block;
+}
+
+.home-links a:hover { border-color: var(--accent); }
