@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>KampusLink — Campus news, community and marketplace for students in Algeria</title>
-<meta name="description" content="KampusLink connects university students across Algeria with translated campus news, a trusted community feed, and a student marketplace — built for low-data connections.">
+<title>KampusLink — Short lessons, flashcards and real exam practice for students in Algeria</title>
+<meta name="description" content="KampusLink is a free study app for students in Algeria: short lessons, flashcards that come back at the right time, quizzes and mock exams. Works offline, in Arabic, French and English.">
 <link rel="stylesheet" href="styles.css">
 <style>
   :root{
@@ -97,6 +97,7 @@
   .kl-feed-item.news .kl-feed-bar{background:var(--blue);}
   .kl-feed-item.community .kl-feed-bar{background:var(--amber);}
   .kl-feed-item.market .kl-feed-bar{background:#4CC38A;}
+  .kl-soon{display:inline-block;font-size:0.72rem;color:var(--amber);border:1px solid var(--amber);border-radius:999px;padding:2px 10px;margin-left:8px;vertical-align:middle;}
   .kl-feed-tag{
     font-size:0.72rem;
     color:var(--muted);
@@ -209,15 +210,15 @@
   <section class="kl-hero">
     <div>
       <div class="kl-langs">
-        <span>Français</span>
         <span>العربية</span>
+        <span>Français</span>
         <span>English</span>
       </div>
-      <h1 class="kl-headline">Your campus, in one feed you can trust.</h1>
-      <p class="lede">KampusLink brings together university news, campus community discussion, and a student marketplace — translated into the language you read in, and built to work on a light data connection.</p>
+      <h1 class="kl-headline">Study your modules in a few minutes a day.</h1>
+      <p class="lede">KampusLink turns your programme into short lessons, flashcards, quizzes and mock exams. It remembers what you forget, works without internet once downloaded, and it is free.</p>
       <div class="kl-cta-row">
-        <a href="#what-it-does" class="kl-btn primary">See what KampusLink does</a>
-        <a href="#google-sign-in" class="kl-btn ghost">Why we use Google Sign-In</a>
+        <a href="https://play.google.com/store/apps/details?id=com.kampuslink.kampuslink" class="kl-btn primary">Get it on Google Play</a>
+        <a href="https://kampus-link.com" class="kl-btn ghost">Open the web app</a>
       </div>
     </div>
 
@@ -225,64 +226,84 @@
       <div class="kl-feed-item news">
         <div class="kl-feed-bar"></div>
         <div>
-          <div class="kl-feed-tag">Campus News · <span class="trust">Verified source</span></div>
-          <div class="kl-feed-title">Registration deadline extended for second-semester courses</div>
+          <div class="kl-feed-tag">Lesson · 4 min</div>
+          <div class="kl-feed-title">Limits of a function: the idea in one picture</div>
         </div>
       </div>
       <div class="kl-feed-item community">
         <div class="kl-feed-bar"></div>
         <div>
-          <div class="kl-feed-tag">Community</div>
-          <div class="kl-feed-title">Anyone doing the algorithms review session tonight?</div>
+          <div class="kl-feed-tag">Flashcard · <span class="trust">due today</span></div>
+          <div class="kl-feed-title">What is the oxidation number of oxygen in H₂O?</div>
         </div>
       </div>
       <div class="kl-feed-item market">
         <div class="kl-feed-bar"></div>
         <div>
-          <div class="kl-feed-tag">Marketplace</div>
-          <div class="kl-feed-title">Selling: calculus textbook, barely used — 2,000 DA</div>
+          <div class="kl-feed-tag">Quiz</div>
+          <div class="kl-feed-title">Which law gives the current in a series circuit?</div>
         </div>
       </div>
       <div class="kl-feed-item news">
         <div class="kl-feed-bar"></div>
         <div>
-          <div class="kl-feed-tag">Campus News · <span class="trust">Verified source</span></div>
-          <div class="kl-feed-title">Library extends opening hours during exam period</div>
+          <div class="kl-feed-tag">Mock exam · <span class="trust">timed</span></div>
+          <div class="kl-feed-title">Exam-style paper with a step-by-step correction</div>
         </div>
       </div>
     </div>
   </section>
 
   <section class="kl-block" id="what-it-does">
-    <h2>One app instead of five group chats and a bulletin board.</h2>
-    <p class="intro">Most campus information in Algeria is scattered — a university announcement here, a Facebook group there, a WhatsApp forward that's three days old. KampusLink pulls it into a single, organized feed for your university, and does the translating so language isn't a barrier to knowing what's going on.</p>
+    <h2>Everything you need to revise, in one app.</h2>
+    <p class="intro">No more searching through PDFs and group chats the night before the exam. KampusLink follows the official programme of your year and breaks it into small steps you can finish on the bus.</p>
 
     <div class="kl-pillars">
       <div class="kl-pillar">
-        <h3>Campus news, translated</h3>
-        <p>We follow official university sources and campus pages, and turn each update into a short, clear post — translated automatically so it reads naturally whether you follow it in French, Arabic, or English.</p>
+        <h3>Short lessons</h3>
+        <p>Each lesson takes a few minutes: one idea, clear examples and worked solutions, one step at a time.</p>
       </div>
       <div class="kl-pillar">
-        <h3>A community that's actually yours</h3>
-        <p>Discussion tied to your university, not a random national group. Ask questions, share notes, find people in your program.</p>
+        <h3>Flashcards that come back</h3>
+        <p>Cards you get wrong come back soon; cards you know come back later. You spend your time on what you have not learned yet.</p>
       </div>
       <div class="kl-pillar">
-        <h3>A marketplace for students</h3>
-        <p>Buy and sell textbooks, gear, and housing leads with people from your own campus, instead of scrolling a citywide marketplace app.</p>
+        <h3>Exam practice</h3>
+        <p>Quizzes after each lesson, exercises with corrections, and timed mock exams in the style of your real exams.</p>
       </div>
     </div>
   </section>
 
   <section class="kl-block">
-    <h2>We label where every post comes from.</h2>
-    <p class="intro">Every campus-news item carries a trust label based on its source — an official university account is marked differently from an unverified page — so you can tell at a glance how much weight to give it. Nothing is published as news without a source attached.</p>
+    <h2>Made for how students in Algeria study.</h2>
+    <div class="kl-pillars">
+      <div class="kl-pillar">
+        <h3>Works offline</h3>
+        <p>Download your modules once on Wi-Fi or mobile data, then study anywhere. Your progress syncs when you are back online.</p>
+      </div>
+      <div class="kl-pillar">
+        <h3>Your language</h3>
+        <p>Use the app in Arabic, French or English. Scientific terms are linked to the words you learned at lycée.</p>
+      </div>
+      <div class="kl-pillar">
+        <h3>Streaks and XP</h3>
+        <p>Keep a daily streak, earn XP while you study and spend it in the XP shop. Gentle reminders help you keep the habit; you can turn them off.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="kl-block" id="modules">
+    <h2>Who it is for</h2>
+    <p class="intro"><strong>University:</strong> first-year Sciences et Technologies (ST) modules, and Génie minier. More programmes are being added.</p>
+    <p class="intro"><strong>Baccalauréat</strong><span class="kl-soon">coming soon</span><br>Sciences expérimentales first: Natural sciences, Physics, Chemistry and Mathematics, in Arabic, following the official programme. Real past bac questions are shown with their year and stream.</p>
+    <p class="intro">KampusLink is independent. It is not affiliated with any ministry, the ONEC, any university or any school.</p>
   </section>
 
   <section class="kl-block" id="google-sign-in">
     <h2>Signing in with Google</h2>
-    <p class="intro">KampusLink uses Google Sign-In so you can create an account without setting up another password. It also lets your feed, saved posts, and marketplace listings follow you if you switch phones.</p>
+    <p class="intro">KampusLink uses Google Sign-In so you can create an account without another password, and keep your progress when you change phones.</p>
     <div class="kl-signin">
-      <p>We request your name, email address, and profile photo from Google to set up and identify your KampusLink account. We don't post on your behalf, and we don't access your Google Drive, Contacts, or Gmail.</p>
+      <p>We receive your name and email address from Google to create and identify your account. Other students never see your email or your real name, only your username. We don't post on your behalf, and we don't access your Gmail, Drive or contacts. Details: <a href="privacy.html">Privacy Policy</a>.</p>
       <span class="kl-google-btn">
         <svg width="18" height="18" viewBox="0 0 18 18"><path fill="#4285F4" d="M17.64 9.2c0-.64-.06-1.25-.16-1.84H9v3.48h4.84c-.21 1.13-.85 2.09-1.81 2.73v2.27h2.93c1.71-1.58 2.7-3.9 2.7-6.64z"/><path fill="#34A853" d="M9 18c2.43 0 4.47-.8 5.96-2.18l-2.93-2.27c-.81.55-1.85.87-3.03.87-2.33 0-4.3-1.57-5.01-3.68H.96v2.34C2.44 15.98 5.48 18 9 18z"/><path fill="#FBBC05" d="M3.99 10.74A5.4 5.4 0 013.7 9c0-.6.1-1.2.29-1.74V4.92H.96A9 9 0 000 9c0 1.45.35 2.83.96 4.08l3.03-2.34z"/><path fill="#EA4335" d="M9 3.58c1.32 0 2.51.45 3.44 1.35l2.6-2.6C13.46.89 11.43 0 9 0 5.48 0 2.44 2.02.96 4.92l3.03 2.34C4.7 5.15 6.67 3.58 9 3.58z"/></svg>
         Continue with Google
@@ -298,6 +319,7 @@
     <a href="privacy.html">Privacy Policy</a> ·
     <a href="terms.html">Terms of Service</a> ·
     <a href="community-guidelines.html">Community Guidelines</a> ·
+    <a href="delete-account.html">Delete Account</a> ·
     <a href="mailto:hello@kampus-link.com">hello@kampus-link.com</a>
   </span>
 </footer>
